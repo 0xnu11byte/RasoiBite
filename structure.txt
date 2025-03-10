@@ -1,0 +1,69 @@
+food-delivery-website/  
+│── backend/  
+│   ├── controllers/          # Handles requests (order, user, payment)  
+│   │   ├── authController.js  
+│   │   ├── userController.js  
+│   │   ├── orderController.js  
+│   │   ├── menuController.js  
+│   │   ├── paymentController.js  
+│   │   ├── deliveryController.js  
+│   ├── models/               # Database models (MongoDB/MySQL)  
+│   │   ├── User.js  
+│   │   ├── Order.js  
+│   │   ├── Menu.js  
+│   │   ├── Payment.js  
+│   │   ├── Delivery.js  
+│   ├── routes/               # API routes  
+│   │   ├── authRoutes.js  
+│   │   ├── userRoutes.js  
+│   │   ├── orderRoutes.js  
+│   │   ├── menuRoutes.js  
+│   │   ├── paymentRoutes.js  
+│   │   ├── deliveryRoutes.js  
+│   ├── config/               # Configurations (DB, Auth, Payment)  
+│   │   ├── db.js  
+│   │   ├── authConfig.js  
+│   │   ├── paymentConfig.js  
+│   ├── middleware/           # Authentication & Authorization  
+│   │   ├── authMiddleware.js  
+│   │   ├── errorHandler.js  
+│   ├── utils/                # Utility functions  
+│   │   ├── sendNotification.js  
+│   │   ├── calculateETA.js  
+│   ├── server.js             # Main backend entry file  
+│   ├── package.json          # Backend dependencies  
+│  
+│── frontend/  
+│   ├── public/               # Static assets  
+│   │   ├── images/  
+│   ├── src/  
+│   │   ├── components/       # Reusable UI components  
+│   │   │   ├── Navbar.js  
+│   │   │   ├── Footer.js  
+│   │   │   ├── MenuItem.js  
+│   │   │   ├── OrderCard.js  
+│   │   ├── pages/            # Main pages  
+│   │   │   ├── Home.js  
+│   │   │   ├── Menu.js  
+│   │   │   ├── Cart.js  
+│   │   │   ├── Checkout.js  
+│   │   │   ├── OrderTracking.js  
+│   │   │   ├── Profile.js  
+│   │   │   ├── AdminDashboard.js  
+│   │   ├── context/          # Context API for global state  
+│   │   │   ├── AuthContext.js  
+│   │   │   ├── CartContext.js  
+│   │   ├── App.js            # Main App component  
+│   │   ├── index.js          # Entry point  
+│   ├── package.json          # Frontend dependencies  
+│  
+│── database/  
+│   ├── schema.sql            # Database schema (for SQL-based systems)  
+│   ├── seed.js               # Dummy data insertion  
+│  
+│── docs/                     # Documentation  
+│   ├── API_Documentation.md  
+│   ├── README.md  
+│  
+│── .env                      # Environment variables  
+│── .gitignore                # Git ignore file  
