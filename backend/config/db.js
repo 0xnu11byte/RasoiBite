@@ -13,7 +13,7 @@ dotenv.config();
 const db = mysql.createPool({
     host: "localhost",
     user: "root",
-    password: "Gr8Indi@",
+    password: "*******",
     database: "rasoi_bite",
     connectionLimit: 10
 });
